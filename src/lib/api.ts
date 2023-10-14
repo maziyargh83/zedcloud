@@ -1,5 +1,6 @@
-import { aria2 } from "@/lib/aria2";
+"use server";
+import { aria2Http } from "@/lib/aria2";
 
 export const getVersion = async () => {
-  return await aria2.getVersion();
+  return await aria2Http.getVersion();
 };

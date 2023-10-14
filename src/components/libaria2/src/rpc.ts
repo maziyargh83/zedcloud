@@ -1,8 +1,7 @@
 import { v4 } from "uuid";
 import axios from "axios";
 
-import _WebSocket from "ws";
-const WebSocket = globalThis.WebSocket ?? _WebSocket;
+const WebSocket = globalThis.WebSocket ?? import("ws");
 import {
   IAria2ClientOptions,
   IAria2WSClientOptions,
